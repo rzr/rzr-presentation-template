@@ -25,7 +25,7 @@
 (require 'ox-reveal)
 #+END_SRC
 * Image
-  [[http://orgmode.org/img/org-mode-unicorn-logo.png]]
+  [[./http/orgmode.org/img/org-mode-unicorn-logo.png]]
 
 * Tables
 
@@ -40,16 +40,16 @@
 
 * Background
   :PROPERTIES:
-  :reveal_background: http://orgmode.org/img/org-mode-unicorn-logo.png
+  :reveal_background: ./http/orgmode.org/img/org-mode-unicorn-logo.png
   :reveal_background_repeat: repeat
   :END:
 
 * Resources
-  - http://emacs.org
+  - ./http/emacs.org
   - https://github.com/hakimel/reveal.js
   - https://github.com/yjwen/org-reveal
 * Notes
   - Thanks: #GrafikLabor, #AFGRAL, ActiveDesign
   - Created with emacs, org-mode, reveal.js, ox-reveal
   - License: CC-BY-SA @RzrFreeFr 2016
-  - ././https://friendica.eu/profile/rzr @RzrFreeFr
+  - ././http/s://friendica.eu/profile/rzr @RzrFreeFr
