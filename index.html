@@ -3,13 +3,13 @@
 <head>
 <meta charset="utf-8"/>
 <title></title>
-<meta name="author" content="( default)"/>
+<meta name="author" content="( org-mode to reveal.js)"/>
 <style type="text/css">
 .underline { text-decoration: underline; }
 </style>
-<link rel="stylesheet" href="http://cdn.jsdelivr.net/reveal.js/3.0.0/css/reveal.css"/>
+<link rel="stylesheet" href="reveal.js/css/reveal.css"/>
 
-<link rel="stylesheet" href="http://cdn.jsdelivr.net/reveal.js/3.0.0/css/theme/moon.css" id="theme"/>
+<link rel="stylesheet" href="reveal.js/css/theme/moon.css" id="theme"/>
 
 
 <!-- If the query includes 'print-pdf', include the PDF print sheet -->
@@ -18,7 +18,7 @@
         var link = document.createElement( 'link' );
         link.rel = 'stylesheet';
         link.type = 'text/css';
-        link.href = 'http://cdn.jsdelivr.net/reveal.js/3.0.0/css/print/pdf.css';
+        link.href = 'reveal.js/css/print/pdf.css';
         document.getElementsByTagName( 'head' )[0].appendChild( link );
     }
 </script>
@@ -26,14 +26,21 @@
 <body>
 <div class="reveal">
 <div class="slides">
-<section id="sec-title-slide"><h2 class="author"> default</h2><p class="date">Created: 2016-07-04 Mon 00:41</p>
+<section id="sec-title-slide"><h2 class="author"> org-mode to reveal.js</h2><p class="date">Created: 2016-07-04 Mon 00:52</p>
 </section>
 <section id="table-of-contents">
 <div id="table-of-contents">
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#/slide-orgheadline1">1. Introduction</a></li>
+<li><a href="#/slide-orgheadline1">1. Introduction                                                          :TODO:org-mode:</a></li>
+<li><a href="#/slide-orgheadline7">2. Lists</a></li>
+<li><a href="#/slide-orgheadline8">3. Source</a></li>
+<li><a href="#/slide-orgheadline9">4. Image</a></li>
+<li><a href="#/slide-orgheadline10">5. Tables</a></li>
+<li><a href="#/slide-orgheadline11">6. Background</a></li>
+<li><a href="#/slide-orgheadline12">7. Resources</a></li>
+<li><a href="#/slide-orgheadline13">8. Notes</a></li>
 </ul>
 </div>
 </div>
@@ -41,13 +48,158 @@
 
 <section>
 <section id="slide-orgheadline1">
-<h2 id="orgheadline1"><span class="section-number-2">1</span> Introduction</h2>
+<h2 id="orgheadline1"><span class="section-number-2">1</span> Introduction                                                          :TODO:org-mode:</h2>
+<ul>
+<li>Your life in plain text !</li>
+<li>org-mode comes for emacs
+<ul>
+<li>(but is not depedent to it)</li>
+
+</ul></li>
+
+</ul>
+</section>
+</section>
+<section>
+<section id="slide-orgheadline7">
+<h2 id="orgheadline7"><span class="section-number-2">2</span> Lists</h2>
+<div class="outline-text-2" id="text-2">
+</div></section>
+<section id="slide-orgheadline3">
+<h3 id="orgheadline3"><span class="section-number-3">2.1</span> Sublists with items :</h3>
+<ul>
+<li><span class="timestamp-wrapper"><span class="timestamp">&lt;2016-07-03 Sun&gt; </span></span> : date</li>
+<li><span class="timestamp-wrapper"><span class="timestamp">&lt;2016-07-02 Sat&gt; </span></span> : C-c . in emacs</li>
+
+</ul>
+
+</section>
+<section id="slide-orgheadline2">
+<h4 id="orgheadline2"><span class="section-number-4">2.1.1</span> tags can be added too but hidden</h4>
+</section>
+<section id="slide-orgheadline6">
+<h3 id="orgheadline6"><span class="section-number-3">2.2</span> tasks , can be listed</h3>
+<div class="outline-text-3" id="text-2-2">
+</div></section>
+<section id="slide-orgheadline4">
+<h4 id="orgheadline4"><span class="section-number-4">2.2.1</span> <span class="todo TODO">TODO</span> : A is optionnal and tell priorities</h4>
+</section>
+<section id="slide-orgheadline5">
+<h4 id="orgheadline5"><span class="section-number-4">2.2.2</span> <span class="done DONE">DONE</span> : task cycle</h4>
+</section>
+</section>
+<section>
+<section id="slide-orgheadline8">
+<h2 id="orgheadline8"><span class="section-number-2">3</span> Source</h2>
+<div class="org-src-container">
+
+<pre  class="src src-elisp">(<span style="color: #ffff00; font-weight: bold;">require</span> '<span style="color: #ffffff; font-weight: bold; text-decoration: underline;">org</span>)
+(<span style="color: #ffff00; font-weight: bold;">require</span> '<span style="color: #ffffff; font-weight: bold; text-decoration: underline;">ox-reveal</span>)
+</pre>
+</div>
+</section>
+</section>
+<section>
+<section id="slide-orgheadline9">
+<h2 id="orgheadline9"><span class="section-number-2">4</span> Image</h2>
+
+<div class="figure">
+<p><img src="http:///orgmode.org/img/org-mode-unicorn-logo.png" alt="org-mode-unicorn-logo.png" />
+</p>
+</div>
+
+</section>
+</section>
+<section>
+<section id="slide-orgheadline10">
+<h2 id="orgheadline10"><span class="section-number-2">5</span> Tables</h2>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Date (YMC)</th>
+<th scope="col" class="org-left">description of 60char r</th>
+<th scope="col" class="org-right">out</th>
+<th scope="col" class="org-right">in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left"><span class="timestamp-wrapper"><span class="timestamp">&lt;2016-01-06 Wed&gt;</span></span></td>
+<td class="org-left">a : emacs : "C-c C-c"</td>
+<td class="org-right">1</td>
+<td class="org-right">2</td>
+</tr>
+
+<tr>
+<td class="org-left"><span class="timestamp-wrapper"><span class="timestamp">&lt;2016-07-03 Sun&gt;</span></span></td>
+<td class="org-left">b : to compute values</td>
+<td class="org-right">10</td>
+<td class="org-right">0.3</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">#</td>
+<td class="org-left">13.2</td>
+<td class="org-right">11</td>
+<td class="org-right">2.3</td>
+</tr>
+
+<tr>
+<td class="org-left">^</td>
+<td class="org-left">sum</td>
+<td class="org-right">vout</td>
+<td class="org-right">vin</td>
+</tr>
+</tbody>
+</table>
+
+</section>
+</section>
+<section>
+<section id="slide-orgheadline11" data-background="http:///orgmode.org/img/org-mode-unicorn-logo.png" data-background-repeat="repeat">
+<h2 id="orgheadline11"><span class="section-number-2">6</span> Background</h2>
+
+</section>
+</section>
+<section>
+<section id="slide-orgheadline12">
+<h2 id="orgheadline12"><span class="section-number-2">7</span> Resources</h2>
+<ul>
+<li><a href="http:///emacs.org">http:///emacs.org</a></li>
+<li><a href="https://github.com/hakimel/reveal.js">https://github.com/hakimel/reveal.js</a></li>
+<li><a href="https://github.com/yjwen/org-reveal">https://github.com/yjwen/org-reveal</a></li>
+
+</ul>
+</section>
+</section>
+<section>
+<section id="slide-orgheadline13">
+<h2 id="orgheadline13"><span class="section-number-2">8</span> Notes</h2>
+<ul>
+<li>Thanks: #GrafikLabor, #AFGRAL, ActiveDesign</li>
+<li>Created with emacs, org-mode, reveal.js, ox-reveal</li>
+<li>License: CC-BY-SA @RzrFreeFr 2016</li>
+<li>./<a href="http:///s://friendica.eu/profile/rzr">http:///s://friendica.eu/profile/rzr</a> @RzrFreeFr</li>
+
+</ul>
 </section>
 </section>
 </div>
 </div>
-<script src="http://cdn.jsdelivr.net/reveal.js/3.0.0/lib/js/head.min.js"></script>
-<script src="http://cdn.jsdelivr.net/reveal.js/3.0.0/js/reveal.js"></script>
+<script src="reveal.js/lib/js/head.min.js"></script>
+<script src="reveal.js/js/reveal.js"></script>
 
 <script>
 // Full list of configuration options available here:
@@ -74,11 +226,11 @@ multiplex: {
 
 // Optional libraries used to extend on reveal.js
 dependencies: [
- { src: 'http://cdn.jsdelivr.net/reveal.js/3.0.0/lib/js/classList.js', condition: function() { return !document.body.classList; } },
- { src: 'http://cdn.jsdelivr.net/reveal.js/3.0.0/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
- { src: 'http://cdn.jsdelivr.net/reveal.js/3.0.0/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
- { src: 'http://cdn.jsdelivr.net/reveal.js/3.0.0/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
- { src: 'http://cdn.jsdelivr.net/reveal.js/3.0.0/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }]
+ { src: 'reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+ { src: 'reveal.js/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: 'reveal.js/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: 'reveal.js/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+ { src: 'reveal.js/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }]
 });
 </script>
 </body>
