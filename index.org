@@ -7,6 +7,8 @@
 {{{tags-on-export}}}
 
 * Introduction                                                          :TODO:
+* Index
+** org-reveal:  [[./org-reveal/index.html]]  [[./org-reveal/index.org]]
 * How to create a presentation
 ** Branch base branch into custom branch
 ** edit index.org , make
