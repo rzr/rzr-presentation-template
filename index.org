@@ -7,4 +7,10 @@
 {{{tags-on-export}}}
 
 * Introduction                                                          :TODO:
-
+* How to create a presentation
+** Branch base branch into custom branch
+** edit index.org , make
+** submit it back to master :
+   git checkout master
+   git subtree  add --prefix=${name} ${name}
+   git subtree  merge --prefix=${name} ${name}
