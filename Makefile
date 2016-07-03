@@ -8,7 +8,7 @@ licence_url?=https://licensedb.org/id/CC-BY-SA-4.0.txt
 
 all: LICENSE url.lst ${target}.html
 
-%.org: Makefile
+%.org: reveal.js Makefile
 
 %.html: %.org Makefile
 	NAME="${NAME}" emacs --batch\
@@ -40,7 +40,7 @@ reveal.js:
 	wget -O- ${reveal_zip_url} > tmp.zip && unzip tmp.zip \
  && mv reveal.js-master reveal.js
 
-deploy: all
+deploy: all reveal.js
 	-git add .
 	-git commit -sam 'WIP'
 	git push origin -f  HEAD:gh-pages
